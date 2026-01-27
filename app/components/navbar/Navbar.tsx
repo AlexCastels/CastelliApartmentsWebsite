@@ -3,7 +3,10 @@ import { colorSchema } from "@/app/style/color-schema"
 import { ColorSchemaInterface } from "@/app/models/colorSchema/colorSchema.interface"
 
 interface NavbarPropsInterface {
-    links : any ,
+    links : {
+        sectionId : string,
+        text : string,
+    }[] ,
     colorSchema : ColorSchemaInterface 
 }
 

@@ -29,32 +29,12 @@ export interface PropertyDataInterface {
         tel1: number,
         tel2: number,
         email: string,
-        socialLinks : [
-            {
-                id : 1,
-                name: string ,
-                icon : string,
-                url : string
-            },
-            {
-                id : 2,
-                name: string ,
-                icon : string,
-                url : string
-            },
-            {
-                id : 3,
-                name: string ,
-                icon : string,
-                url : string
-            } ,
-            {
-                id : 4,
-                name: string ,
-                icon : string,
-                url : string
-            }
-        ],
+        socialLinks : {
+            id : number,
+            name: string ,
+            icon : string,
+            url : string
+        }[],
         webSite: string
     },
     rewies: {
