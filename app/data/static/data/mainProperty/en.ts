@@ -13,7 +13,12 @@ export const en : PropertyDataInterface = {
     urlBooking: "",
     urlBedAndBreakfast : "",
     images : [],
-    headerPhoto: [],
+    headerPhoto: {
+        url: "/images/header.png",
+        width: 3100,
+        height: 2067,
+        description: "Foto di testata"
+    },
     place: {
         region: "Sicilia",
         province: "PA",
@@ -35,27 +40,33 @@ export const en : PropertyDataInterface = {
             {
                 id : 1,
                 name: 'Facebook' ,
-                icon : '',
-                url : ''
+                icon : '/icons/facebook.svg',
+                url : 'https://www.facebook.com/profile.php?id=61586365257167'
             },
             {
                 id : 2,
                 name: 'Instagram' ,
-                icon : '',
+                icon : '/icons/instagram.svg',
                 url : ''
             },
             {
                 id : 3,
+                name: 'Bed-and-breakfast' ,
+                icon : '/icons/beb.svg',
+                url : ''
+            },
+            {
+                id : 4,
                 name: 'Booking' ,
-                icon : '',
+                icon : '/icons/bookingdotcom.svg',
                 url : ''
             } ,
             {
-                id : 4,
-                name: 'Bed-and-breakfast' ,
-                icon : '',
+                id : 5,
+                name: 'Airbnb' ,
+                icon : '/icons/airbnb.svg',
                 url : ''
-            }
+            } ,
         ],
         webSite: ""
     },

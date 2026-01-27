@@ -13,7 +13,12 @@ export const it : PropertyDataInterface = {
     urlBooking: "",
     urlBedAndBreakfast : "",
     images : [],
-    headerPhoto: [],
+    headerPhoto: {
+        url: "/images/header.png",
+        width: 3100,
+        height: 2067,
+        description: "Foto di testata"
+    },
     place: {
         region: "Sicilia",
         province: "PA",

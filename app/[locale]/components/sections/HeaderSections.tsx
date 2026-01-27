@@ -1,3 +1,4 @@
+import ButtonComponent from "@/app/components/buttons/ButtonComponent";
 import SocialLinksComponent from "@/app/components/socialLinks/SocialLinksComponent";
 import { ColorSchemaInterface } from "@/app/models/colorSchema/colorSchema.interface";
 import { DictionaryInterface } from "@/app/models/dictionary/dictionary.interface";
@@ -12,21 +13,23 @@ interface HeaderSectionProps {
 
 export default function HeaderSection({ propertyData , dictionary , colorSchema } : HeaderSectionProps ){
     return (
-        <section id="headerSection" className={`${colorSchema.primaryBg} flex items-center justify-center h-[calc(100vh-112px)] w-full`}>
-            <div className="max-w-6xl w-full">
+        <section id="headerSection" className={`relative ${colorSchema.primaryBg} flex items-center justify-center h-screen bg-[url('/images/header.jpg')] bg-cover bg-center w-full`}>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="w-full pt-20">
                 <div className="flex flex-col items-center justify-center">   
                     <p className={`${colorSchema.secondaryText} uppercase tracking-widest text-2xl text-center`}>{dictionary.headerSection.title}</p>
                     <Image 
-                        className="invert brightness-0 saturate-0 opacity-90"
+                        className="invert brightness-0 saturate-0"
                         src={'/logo.png'} 
                         alt="Logo png" 
                         height={500} 
                         width={500}
                     />
                 </div>
-                <div className=" flex flex-col lg:flex-row justify-between gap-20 lg:gap-0 w-full px-6">
+                <div className="container flex flex-col lg:flex-row justify-between items-center gap-20 lg:gap-0 w-full max-w-7xl mx-auto px-4">
                     <SocialLinksComponent colorSchema={colorSchema} socialLinks={propertyData.contacts.socialLinks} />
-                    <button>Ciao</button>
+                    <ButtonComponent label={dictionary.headerSection.ctaLabel} url={propertyData.urlBedAndBreakfast}></ButtonComponent>
                 </div>
             </div>
         </section>

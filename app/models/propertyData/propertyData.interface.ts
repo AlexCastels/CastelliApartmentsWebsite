@@ -11,7 +11,12 @@ export interface PropertyDataInterface {
     urlBooking: string
     urlBedAndBreakfast : string
     images : [],
-    headerPhoto: [],
+    headerPhoto: {
+        url: string,
+        width: number,
+        height: number,
+        description: string
+    },
     place: {
         region: string,
         province: string,

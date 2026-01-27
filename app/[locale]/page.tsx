@@ -27,7 +27,7 @@ export default async function Home({ params } : HomePropsInterface) {
 	const navLinks = locale === 'it' ? linksIt : linksEn ;
 
 	return (
-		<div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+		<div>
 			<Navbar links={navLinks} colorSchema={colorSchema}></Navbar>
 			<HeaderSection propertyData={propertyData} dictionary={dictionary} colorSchema={colorSchema}></HeaderSection>
 		</div>
