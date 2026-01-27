@@ -1,4 +1,6 @@
-export const colorSchema = {
+import { ColorSchemaInterface } from "../models/colorSchema/colorSchema.interface";
+
+export const colorSchema : ColorSchemaInterface = {
     primaryText : 'text-gray-800' ,
     secondaryText : 'text-gray-200' ,
     primaryTitle : 'text-amber-500' ,

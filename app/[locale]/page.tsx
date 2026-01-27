@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import { it as linksIt } from "../data/static/data/links/it";
 import { en as linksEn } from "../data/static/data/links/en";
+import { colorSchema } from "../style/color-schema";
 const VALID_LOCALES = ['it' , 'en'] ;
 
 interface HomePropsInterface {
@@ -27,8 +28,8 @@ export default async function Home({ params } : HomePropsInterface) {
 
 	return (
 		<div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-			<Navbar links={navLinks}></Navbar>
-			<HeaderSection propertyData={propertyData} dictionary={dictionary}></HeaderSection>
+			<Navbar links={navLinks} colorSchema={colorSchema}></Navbar>
+			<HeaderSection propertyData={propertyData} dictionary={dictionary} colorSchema={colorSchema}></HeaderSection>
 		</div>
 	);
 }

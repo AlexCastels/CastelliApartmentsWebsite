@@ -1,4 +1,6 @@
-export const it = {
+import { DictionaryInterface } from "@/app/models/dictionary/dictionary.interface";
+
+export const it : DictionaryInterface = {
     lang : 'it' ,
     headerSection : {
         title : "Visit Palermo",
