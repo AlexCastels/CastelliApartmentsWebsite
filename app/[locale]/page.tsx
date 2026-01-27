@@ -1,4 +1,4 @@
-import HeaderSection from "./components/sections/HeaderSections";
+import HeaderSection from "./components/sections/HeaderSection";
 import { en as dictionaryEn} from "../data/static/locale/dictionary/en";
 import { it as dictionaryIt} from "../data/static/locale/dictionary/it";
 import { en as dataEn } from "../data/static/data/mainProperty/en";
@@ -8,6 +8,7 @@ import Navbar from "../components/navbar/Navbar";
 import { it as linksIt } from "../data/static/data/links/it";
 import { en as linksEn } from "../data/static/data/links/en";
 import { colorSchema } from "../style/color-schema";
+import VideoSection from "./components/sections/VideoSection";
 const VALID_LOCALES = ['it' , 'en'] ;
 
 interface HomePropsInterface {
@@ -30,6 +31,9 @@ export default async function Home({ params } : HomePropsInterface) {
 		<div>
 			<Navbar links={navLinks} colorSchema={colorSchema}></Navbar>
 			<HeaderSection propertyData={propertyData} dictionary={dictionary} colorSchema={colorSchema}></HeaderSection>
+			<VideoSection/>
 		</div>
+
+		// https://commons.wikimedia.org/w/index.php?search=palermo&title=Special%3AMediaSearch&type=image cercare qui img per le zone
 	);
 }
