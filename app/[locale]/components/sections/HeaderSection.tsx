@@ -13,10 +13,17 @@ interface HeaderSectionProps {
 
 export default function HeaderSection({ propertyData , dictionary , colorSchema } : HeaderSectionProps ){
     return (
-        <section id="headerSection" className={`relative ${colorSchema.primaryBg} flex items-center justify-center h-screen bg-[url('/images/header.jpg')] bg-cover bg-center w-full`}>
+        <section id="header" className={`relative ${colorSchema.primaryBg}  flex items-center justify-center h-screen w-full shadow-xl`}>
+            <Image
+                src="/images/header.jpg"
+                alt="Hero background"
+                fill
+                className="object-cover object-center z-0"
+                priority
+            />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/20"></div>
-            <div className="w-full pt-20">
+            <div className="absolute inset-0 bg-black/20 z-10"></div>
+            <div className="w-full pt-20 z-20">
                 <div className="flex flex-col items-center justify-center">   
                     <p className={`${colorSchema.secondaryText} uppercase tracking-widest text-2xl text-center`}>{dictionary.headerSection.title}</p>
                     <Image 

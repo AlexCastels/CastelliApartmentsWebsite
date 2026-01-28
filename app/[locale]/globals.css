@@ -26,13 +26,76 @@
 	}
 }
 
-
 body {
 	font-family: "Cinzel", serif;
 	background-color: #ffffff;
 	color: #171717;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+html , body , div {
+    scroll-behavior: smooth;
+	scrollbar-gutter: stable overlay;
+}
+
+/* 
+    Webkit : Safari desktop/macOS - Edge Chromium desktop - Chrome desktop 
+    Non sono supportat Firefox e browser legacy
+*/
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* arrows */
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+div::-webkit-scrollbar-button {
+    display: none; 
+}
+
+/* bg scrollbar container */
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.856) ;
+    border-radius: 0px;
+}
+
+/* barra di scorrimento */
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        rgba(100, 100, 100, 0.4),  /* grigio semitrasparente */
+        rgba(255, 255, 255, 0.2)   /* sfuma leggermente verso il bianco */
+    );
+    /* border: 1px solid rgba(255, 255, 255, 0.2);  */
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+div::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, 0.5);
+}
+
+/* Scrollbar hidden */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+    width: 0; 
+    height: 0;
+    scroll-behavior: smooth;
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
 }
 
 .filter-icon {

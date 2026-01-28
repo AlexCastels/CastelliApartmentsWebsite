@@ -8,12 +8,12 @@ export const en : DictionaryInterface = {
     },
     videoSection : {
         title : 'Explore the city',
-        subtitle: 'Start in the heart'
+        subtitle: 'Start from the heart'
     } ,
     accomodationsSection : {
         descriptionTitle : 'For people on the go',
-        desc1: '',
-        desc2: '',
+        desc1: "'What's special about your product, service, or company? Use this space to highlight the things that set you apart from your competition, whether it's a special feature, a unique philosophy, or awards and recognition that you have received. Think of this as your elevator pitch to get the reader's attention.'",
+        desc2: "What's special about your product, service, or company? Use this space to highlight the things that set you apart from your competition.",
         accomodationsTitle : 'Our accommodations'
     },
     featureSection : {

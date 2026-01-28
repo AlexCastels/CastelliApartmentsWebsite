@@ -18,7 +18,7 @@ export default function SocialLinksComponent({colorSchema  , socialLinks} : Soci
             { socialLinks.map((item) => {
                 return (
                     <Link key={item.id} href={item.url} className="cursor-pointer" target="_blank" rel="noopener noreferrer">
-                        <Image className={`invert brightness-0 saturate-0 opacity-90 hover:opacity-80 transition rounded-sm h-10 w-10 lg:w-14 lg:h-14`}
+                        <Image className={`invert brightness-0 saturate-0 hover:opacity-90 transition rounded-sm h-10 w-10 lg:w-14 lg:h-14`}
                             src={item.icon}
                             alt={`Social icon img for ${item.name}`}
                             width={50}
