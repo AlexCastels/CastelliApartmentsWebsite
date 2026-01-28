@@ -86,64 +86,19 @@ export interface PropertyDataInterface {
             url: string
         },
     ],
-    accomodations: [
-        {
-            id: number,
-            name: string,
-            description: string,
-            numberOfPeople : number,
-            CIR: number,
-            CIN: number,
-            images: [
-                {
-                    url: string,
-                    width: number,
-                    height: number,
-                    description: string
-                } ,
-                {
-                    url: string,
-                    width: number,
-                    height: number,
-                    description: string
-                } ,
-                {
-                    url: string,
-                    width: number,
-                    height: number,
-                    description: string
-                } ,
-            ],
-            cta : string
-        },
-        {
-            id: number,
-            name: string,
-            description: string,
-            numberOfPeople : number,
-            CIR: number,
-            CIN: number,
-            images: [
-                {
-                    url: string,
-                    width: number,
-                    height: number,
-                    description: string
-                } ,
-                {
-                    url: string,
-                    width: number,
-                    height: number,
-                    description: string
-                } ,
-                {
-                    url: string,
-                    width: number,
-                    height: number,
-                    description: string
-                } ,
-            ],
-            cta : string
-        }
-    ],
+    accomodations: {
+        id: number,
+        name: string,
+        description: string,
+        numberOfPeople : number,
+        CIR: number,
+        CIN: number,
+        images:{
+            url: string,
+            width: number,
+            height: number,
+            description: string
+        }[],
+        cta : string
+    }[]
 }

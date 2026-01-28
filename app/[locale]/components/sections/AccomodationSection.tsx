@@ -1,6 +1,7 @@
 import { ColorSchemaInterface } from "@/app/models/colorSchema/colorSchema.interface";
 import { DictionaryInterface } from "@/app/models/dictionary/dictionary.interface";
 import { PropertyDataInterface } from "@/app/models/propertyData/propertyData.interface";
+import Card from "../card/Card";
 
 interface AccomodationSectionInterface {
     propertyData : PropertyDataInterface ;
@@ -13,7 +14,7 @@ export default function AccomodationSection({propertyData , dictionary , colorSc
         <section id="accomodations" >
             <div className="h-200">
                 <div className={`h-1/3 ${colorSchema.secondaryBg} flex items-center px-10`}>
-                    <p className={`${colorSchema.primaryTitle} text-6xl`}>{dictionary.accomodationsSection.descriptionTitle}</p>
+                    <p className={`${colorSchema.primaryTitle} text-8xl`}>{dictionary.accomodationsSection.descriptionTitle}</p>
                 </div>
                 <div className={`h-2/3 ${colorSchema.primaryBg} flex item-center justify-center`}>
                     <div className="flex items-center justify-center">
@@ -24,11 +25,13 @@ export default function AccomodationSection({propertyData , dictionary , colorSc
             </div>
             <div className="h-200">
                 <div className={`h-1/3 ${colorSchema.primaryBg} flex items-center px-10`}>
-                    <p className={`${colorSchema.primaryTitle} text-6xl`}>{dictionary.accomodationsSection.accomodationsTitle}</p>
+                    <p className={`${colorSchema.primaryTitle} text-8xl`}>{dictionary.accomodationsSection.accomodationsTitle}</p>
                 </div>
-                <div className={`h-2/3 ${colorSchema.tertiaryBg} flex item-center justify-center`}>
-                    <div className="flex items-center justify-center">
-                        <p className={`${colorSchema.secondaryText} text-lg tracking-wide flex-1 p-20`}>{'Card appartamenti'}</p>
+                <div className={`h-2/3 ${colorSchema.primaryBg} flex item-center justify-center`}>
+                    <div className="flex items-center justify-center gap-40">
+                        { propertyData.accomodations.map((item) => {
+                            return <Card key={item.id} colorSchema={colorSchema} accomodation={item}/>
+                        })}
                     </div>
                 </div>
             </div>

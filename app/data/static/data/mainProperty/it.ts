@@ -124,22 +124,16 @@ export const it : PropertyDataInterface = {
             CIN: 0,
             images: [
                 {
-                    url: "",
-                    width: 0,
-                    height: 0,
-                    description: ""
+                    url: "/images/accomodation-1/0Y0B3406.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
                 } ,
                 {
-                    url: "",
-                    width: 0,
-                    height: 0,
-                    description: ""
-                } ,
-                {
-                    url: "",
-                    width: 0,
-                    height: 0,
-                    description: ""
+                    url: "/images/accomodation-1/0Y0B3411.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
                 } ,
             ],
             cta : ""
@@ -153,22 +147,22 @@ export const it : PropertyDataInterface = {
             CIN: 0,
             images: [
                 {
-                    url: "",
-                    width: 0,
-                    height: 0,
-                    description: ""
+                    url: "/images/accomodation-2/0Y0B3449-HDR.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
                 } ,
                 {
-                    url: "",
-                    width: 0,
-                    height: 0,
-                    description: ""
+                    url: "/images/accomodation-2/0Y0B3496-HDR.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
                 } ,
                 {
-                    url: "",
-                    width: 0,
-                    height: 0,
-                    description: ""
+                    url: "/images/accomodation-2/0Y0B3499-HDR.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
                 } ,
             ],
             cta : ""
