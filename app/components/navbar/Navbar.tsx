@@ -27,7 +27,7 @@ export default function Navbar( {links , colorSchema} : NavbarPropsInterface ){
 
     return (
         <nav className={`fixed top-0 left-0 z-50 w-full lg:h-28 flex items-center justify-between lg:px-4 transition-all duration-500
-            ${scrolled ? "bg-white/80 backdrop-blur-md shadow-sm border-b border-zinc-200/50" : "border-b border-zinc-200/50 bg-transparent"}
+            ${scrolled ? "backdrop-blur-lg shadow-md border-b border-zinc-200/50" : "border-b border-zinc-200/50 bg-transparent"}
         `}>
             <Image className="object-fill lg:scale-125 h-20 w-24 lg:w-32 lg:h-28 invert brightness-0 saturate-0" height={500} width={500} src="/logo.png" alt="Logo png" />
             <div className="hidden lg:flex flex-1 items-center justify-center lg:gap-20 ">

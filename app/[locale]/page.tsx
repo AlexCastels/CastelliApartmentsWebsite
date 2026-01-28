@@ -31,7 +31,7 @@ export default async function Home({ params } : HomePropsInterface) {
 		<div>
 			<Navbar links={navLinks} colorSchema={colorSchema}></Navbar>
 			<HeaderSection propertyData={propertyData} dictionary={dictionary} colorSchema={colorSchema}></HeaderSection>
-			<VideoSection/>
+			<VideoSection colorSchema={colorSchema}/>
 		</div>
 
 		// https://commons.wikimedia.org/w/index.php?search=palermo&title=Special%3AMediaSearch&type=image cercare qui img per le zone
