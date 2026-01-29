@@ -30,12 +30,14 @@ export default function Card({accomodation , colorSchema , dictionary} : CardPro
     return (
         <div className="flex flex-col gap-2">
             <div className={`${colorSchema.secondaryText} h-100 w-80 border border-zinc-300 flex flex-col justify-between pb-4`}>
-                <Image className="h-50 object-fill shadow-2xl"
-                    alt="Accomodation image" 
-                    src={accomodation.images[0].url} 
-                    height={accomodation.images[0].height} 
-                    width={accomodation.images[0].width}
-                />
+                <figure className="group relative overflow-hidden rounded-b-sm h-50 w-full aspect-video mx-auto shadow-md hover:shadow-xl transition-all duration-500">
+                    <Image className="absolute inset-0 w-full h-full object-fill transition-transform duration-500 group-hover:scale-[1.05] cursor-pointer "
+                        alt="Accomodation image" 
+                        src={accomodation.images[0].url} 
+                        height={accomodation.images[0].height} 
+                        width={accomodation.images[0].width}
+                    />
+                </figure>
                 <div id="header" className="px-4 flex justify-between">
                     <div className="flex flex-col flex-1">
                         <p>{dictionary.accomodationsSection.cardDetail.maxGuests} {accomodation.numberOfPeople}</p>
