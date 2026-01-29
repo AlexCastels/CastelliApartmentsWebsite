@@ -1,6 +1,6 @@
 export const it = [
     {
-        sectionId : 'home',
+        sectionId : '/',
         text : 'Home',
     },
     {

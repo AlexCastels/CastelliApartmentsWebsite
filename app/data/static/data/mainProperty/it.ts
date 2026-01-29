@@ -155,32 +155,6 @@ export const it : PropertyDataInterface = {
             CIN: 123456789000,
             images: [
                 {
-                    url: "/images/accomodation-1/0Y0B3406.jpg",
-                    width: 3100,
-                    height: 2067,
-                    description: "Accomodation image"
-                } ,
-                {
-                    url: "/images/accomodation-1/0Y0B3411.jpg",
-                    width: 3100,
-                    height: 2067,
-                    description: "Accomodation image"
-                } ,
-            ],
-            cta : {
-                label : 'Più informazioni',
-                url : ''
-            }
-        },
-        {
-            id: 2,
-            name: "Maqueda",
-            description: "",
-            numberOfPeople : 4,
-            CIR: 123456789000,
-            CIN: 123456789000,
-            images: [
-                {
                     url: "/images/accomodation-2/0Y0B3449-HDR.jpg",
                     width: 3100,
                     height: 2067,
@@ -194,6 +168,32 @@ export const it : PropertyDataInterface = {
                 } ,
                 {
                     url: "/images/accomodation-2/0Y0B3499-HDR.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
+                } ,
+            ],
+            cta : {
+                label : 'Più informazioni',
+                url : ''
+            }
+        },
+                {
+            id: 2,
+            name: "Maqueda",
+            description: "",
+            numberOfPeople : 4,
+            CIR: 123456789000,
+            CIN: 123456789000,
+            images: [
+                {
+                    url: "/images/accomodation-1/0Y0B3406.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
+                } ,
+                {
+                    url: "/images/accomodation-1/0Y0B3411.jpg",
                     width: 3100,
                     height: 2067,
                     description: "Accomodation image"

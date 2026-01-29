@@ -31,7 +31,7 @@ export const en : DictionaryInterface = {
         title : 'Feature'
     },
     nearbySection : {
-        title : 'All you need in two feet'
+        title : 'All you need is just steps away'
     },
     mapSection : {
         title : 'Here we are',

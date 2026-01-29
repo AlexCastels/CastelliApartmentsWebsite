@@ -102,37 +102,37 @@ export const en : PropertyDataInterface = {
             id: 1,
             ico: "/icons/features/house.png",
             name: "House",
-            description : "" ,
+            description : "Complete and independent apartments" ,
         },
         {
             id: 2,
             ico: "/icons/features/kitchen.png",
-            name: "Kitchen",
-            description : "" ,
+            name: "Cucina",
+            description : "With a kitchen equipped for every need" ,
         },
         {
             id: 3,
             ico: "/icons/features/aria-condizionata.png",
-            name: "Air Conditioning",
-            description : "" ,
+            name: "Aria Condizionata",
+            description : "Equipped with air conditioning" ,
         },
         {
             id: 4,
             ico: "/icons/features/wi-fi.png",
             name: "Wi-fi",
-            description : "" ,
+            description : "Wi-Fi is available for free" ,
         },
         {
             id: 5,
             ico: "/icons/features/netflix.png",
             name: "Netflix",
-            description : "" ,
+            description : "We offer a package of free streaming platforms also" ,
         },
         {
             id: 6,
             ico: "/icons/features/animal.png",
-            name: "Animal",
-            description : "" ,
+            name: "Animali",
+            description : `We are pet-friendly. Pets are welcome, and a dedicated kit is provided to ensure your pet’s comfort during the stay.` ,
         },
     ],
     nearBy : [
@@ -155,13 +155,19 @@ export const en : PropertyDataInterface = {
             CIN: 123456789000,
             images: [
                 {
-                    url: "/images/accomodation-1/0Y0B3406.jpg",
+                    url: "/images/accomodation-2/0Y0B3449-HDR.jpg",
                     width: 3100,
                     height: 2067,
                     description: "Accomodation image"
                 } ,
                 {
-                    url: "/images/accomodation-1/0Y0B3411.jpg",
+                    url: "/images/accomodation-2/0Y0B3496-HDR.jpg",
+                    width: 3100,
+                    height: 2067,
+                    description: "Accomodation image"
+                } ,
+                {
+                    url: "/images/accomodation-2/0Y0B3499-HDR.jpg",
                     width: 3100,
                     height: 2067,
                     description: "Accomodation image"
@@ -181,19 +187,13 @@ export const en : PropertyDataInterface = {
             CIN: 123456789000,
             images: [
                 {
-                    url: "/images/accomodation-2/0Y0B3449-HDR.jpg",
+                    url: "/images/accomodation-1/0Y0B3406.jpg",
                     width: 3100,
                     height: 2067,
                     description: "Accomodation image"
                 } ,
                 {
-                    url: "/images/accomodation-2/0Y0B3496-HDR.jpg",
-                    width: 3100,
-                    height: 2067,
-                    description: "Accomodation image"
-                } ,
-                {
-                    url: "/images/accomodation-2/0Y0B3499-HDR.jpg",
+                    url: "/images/accomodation-1/0Y0B3411.jpg",
                     width: 3100,
                     height: 2067,
                     description: "Accomodation image"

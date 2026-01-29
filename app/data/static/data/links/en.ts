@@ -1,6 +1,6 @@
 export const en = [
     {
-        sectionId : 'home',
+        sectionId : '/',
         text : 'Home',
     },
     {
