@@ -12,9 +12,19 @@ export const it : DictionaryInterface = {
     } ,
     accomodationsSection : {
         descriptionTitle : 'Per chi è sempre in movimento',
-        desc1: "'What's special about your product, service, or company? Use this space to highlight the things that set you apart from your competition, whether it's a special feature, a unique philosophy, or awards and recognition that you have received. Think of this as your elevator pitch to get the reader's attention.'",
-        desc2: "What's special about your product, service, or company? Use this space to highlight the things that set you apart from your competition.",
-        accomodationsTitle : 'I nostri alloggi'
+        desc1: `Situata nel cuore di Palermo, tra il vivace mercato storico di Ballarò e via Maqueda, la struttura gode di una posizione centrale e strategica. 
+
+            La Stazione Centrale è raggiungibile in appena 3 minuti a piedi, rendendo gli spostamenti semplici sia per chi arriva in treno sia per chi desidera esplorare Palermo e i suoi dintorni. 
+        `,
+        desc2:`Molti dei principali punti di interesse sono facilmente raggiungibili a piedi, tra cui i 4 Canti, La Cattedrale ed il Teatro Massimo, senza la necessità di utilizzare mezzi di trasporto. 
+
+            La zona permette di immergersi fin da subito nell’atmosfera autentica della città, tra tradizione, cultura e vita quotidiana.`,
+        accomodationsTitle : 'I nostri alloggi',
+        cardDetail : {
+            maxGuests : 'Ospiti massimi' ,
+            bed : '1 Letto matrimoniale',
+            sofa : '1 Divano letto',
+        },
     },
     featureSection : {
         title : 'Caratteristiche'

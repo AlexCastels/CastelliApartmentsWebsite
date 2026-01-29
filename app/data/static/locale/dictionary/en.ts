@@ -12,9 +12,20 @@ export const en : DictionaryInterface = {
     } ,
     accomodationsSection : {
         descriptionTitle : 'For people on the go',
-        desc1: "'What's special about your product, service, or company? Use this space to highlight the things that set you apart from your competition, whether it's a special feature, a unique philosophy, or awards and recognition that you have received. Think of this as your elevator pitch to get the reader's attention.'",
-        desc2: "What's special about your product, service, or company? Use this space to highlight the things that set you apart from your competition.",
-        accomodationsTitle : 'Our accommodations'
+        desc1: `Located in the heart of Palermo, between the lively historic Ballarò market and Via Maqueda, the property enjoys a central and strategic location. 
+
+
+                The Central Station is just a 3-minute walk away, making it easy for both those arriving by train and those wishing to explore Palermo and its surroundings.`,
+        desc2: `Many of the main points of interest are within walking distance, including the Quattro Canti, the Cathedral, and the Teatro Massimo, without the need for transportation. 
+
+
+                The area allows guests to immediately immerse themselves in the authentic atmosphere of the city, full of tradition, culture, and daily life. `,
+        accomodationsTitle : 'Our accommodations',
+        cardDetail : {
+            maxGuests : 'Max guests' ,
+            bed : '1 Bed king size',
+            sofa : '1 Sofa bed',
+        },
     },
     featureSection : {
         title : 'Feature'

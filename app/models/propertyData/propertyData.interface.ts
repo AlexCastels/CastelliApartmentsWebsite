@@ -99,6 +99,9 @@ export interface PropertyDataInterface {
             height: number,
             description: string
         }[],
-        cta : string
+        cta : {
+            label : string,
+            url : string
+        }
     }[]
 }

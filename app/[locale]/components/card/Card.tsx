@@ -1,5 +1,6 @@
 import ButtonComponent from "@/app/components/buttons/ButtonComponent";
 import { ColorSchemaInterface } from "@/app/models/colorSchema/colorSchema.interface";
+import { DictionaryInterface } from "@/app/models/dictionary/dictionary.interface";
 import Image from "next/image";
 
 interface CardPropsInterface {
@@ -16,27 +17,55 @@ interface CardPropsInterface {
             height: number,
             description: string
         }[],
-        cta : string
+        cta : {
+            label : string,
+            url : string
+        }
     } ;
     colorSchema : ColorSchemaInterface ;
+    dictionary : DictionaryInterface ;
 }
 
-export default function Card({accomodation , colorSchema} : CardPropsInterface){
+export default function Card({accomodation , colorSchema , dictionary} : CardPropsInterface){
     return (
         <div className="flex flex-col gap-2">
-            <div className={`${colorSchema.primaryText} h-96 w-80 border border-zinc-100`}>
+            <div className={`${colorSchema.secondaryText} h-100 w-80 border border-zinc-300 flex flex-col justify-between pb-4`}>
                 <Image className="h-50 object-fill shadow-2xl"
                     alt="Accomodation image" 
                     src={accomodation.images[0].url} 
                     height={accomodation.images[0].height} 
                     width={accomodation.images[0].width}
                 />
-                <div className={`p-4 ${colorSchema.secondaryText}`}>
-                    <p className="uppercase text-xl">{accomodation.name}</p>
+                <div id="header" className="px-4 flex justify-between">
+                    <div className="flex flex-col flex-1">
+                        <p>{dictionary.accomodationsSection.cardDetail.maxGuests} {accomodation.numberOfPeople}</p>
+                        <p>{dictionary.accomodationsSection.cardDetail.bed} /</p>
+                        <p>{dictionary.accomodationsSection.cardDetail.sofa}</p>
+                    </div>
+                    <div className="flex items-baseline justify-center gap-1">
+                        <Image className="h-7 w-7 scale-95 invert brightness-0 saturate-0 opacity-70" alt="icon bed" src={'/icons/icons8-bed-100.png'} width={90} height={90} ></Image>
+                        <Image className='h-7 w-7 scale-105 pt-1 invert brightness-0 saturate-0 opacity-80' alt="icon sofa" src={'/icons/icons8-divano-100.png'} width={100} height={100} ></Image>
+                    </div>
+                </div>
+                <div id="body" className={`px-4`}>
+                    <p className="uppercase text-3xl tracking-wide">{accomodation.name}</p>
+                </div>
+                <div id="footer" className="flex justify-center items-center gap-2">
+                    <p>CIN:{accomodation.CIN}</p>
+                    <div className="h-6 w-px bg-slate-400"></div>
+                    <p>CIR:{accomodation.CIR}</p>
                 </div>
             </div>
-            <div className="justify-items-end">
-                <button className={`${colorSchema.secondaryText} text-lg`}>more info</button>
+            <div className="self-end">
+                <button className={`${colorSchema.secondaryText} text-lg flex gap-1 cursor-pointer hover:ring-1 hover:ring-zinc-300 transition-all duration-300  p-1`}>
+                    <p>{accomodation.cta.label}</p>
+                    <Image className="invert brightness-0 saturate-0 opacity-90 pb-px"
+                        src="/icons/arrow-right.png" 
+                        width={24} 
+                        height={24} 
+                        alt="Arrow svg"
+                    />
+                </button>
             </div>
         </div>
     )

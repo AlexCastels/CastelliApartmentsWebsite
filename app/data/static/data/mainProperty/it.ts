@@ -120,8 +120,8 @@ export const it : PropertyDataInterface = {
             name: "Ballarò",
             description: "",
             numberOfPeople : 4,
-            CIR: 0,
-            CIN: 0,
+            CIR: 123456789000,
+            CIN: 123456789000,
             images: [
                 {
                     url: "/images/accomodation-1/0Y0B3406.jpg",
@@ -136,15 +136,18 @@ export const it : PropertyDataInterface = {
                     description: "Accomodation image"
                 } ,
             ],
-            cta : ""
+            cta : {
+                label : 'Più informazioni',
+                url : ''
+            }
         },
         {
             id: 2,
             name: "Maqueda",
             description: "",
             numberOfPeople : 4,
-            CIR: 0,
-            CIN: 0,
+            CIR: 123456789000,
+            CIN: 123456789000,
             images: [
                 {
                     url: "/images/accomodation-2/0Y0B3449-HDR.jpg",
@@ -165,7 +168,10 @@ export const it : PropertyDataInterface = {
                     description: "Accomodation image"
                 } ,
             ],
-            cta : ""
+            cta : {
+                label : 'Più informazioni',
+                url : ''
+            }
         },
     ],
 }

@@ -12,7 +12,12 @@ export interface DictionaryInterface {
         descriptionTitle : string,
         desc1: string,
         desc2: string,
-        accomodationsTitle : string
+        accomodationsTitle : string,
+        cardDetail : {
+            maxGuests : string ,
+            bed : string,
+            sofa : string,
+        },
     },
     featureSection : {
         title : string
