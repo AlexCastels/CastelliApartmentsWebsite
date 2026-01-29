@@ -99,9 +99,40 @@ export const it : PropertyDataInterface = {
     },
     featureList: [
         {
-            ico: "",
-            id: "",
-            name: ""
+            id: 1,
+            ico: "/icons/features/house.png",
+            name: "Appartamento",
+            description : "" ,
+        },
+        {
+            id: 2,
+            ico: "/icons/features/kitchen.png",
+            name: "Cucina",
+            description : "" ,
+        },
+        {
+            id: 3,
+            ico: "/icons/features/aria-condizionata.png",
+            name: "Aria Condizionata",
+            description : "" ,
+        },
+        {
+            id: 4,
+            ico: "/icons/features/wi-fi.png",
+            name: "Wi-fi",
+            description : "" ,
+        },
+        {
+            id: 5,
+            ico: "/icons/features/netflix.png",
+            name: "Netflix",
+            description : "" ,
+        },
+        {
+            id: 6,
+            ico: "/icons/features/animal.png",
+            name: "Animali",
+            description : "" ,
         },
     ],
     nearBy : [

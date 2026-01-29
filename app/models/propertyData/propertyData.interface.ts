@@ -69,13 +69,12 @@ export interface PropertyDataInterface {
         description: string,
         foto: []
     },
-    featureList: [
-        {
-            ico: string,
-            id: string,
-            name: string
-        },
-    ],
+    featureList: {
+        id: number,
+        ico: string,
+        name: string,
+        description : string
+    }[],
     nearBy : [
         {
             name: string,
