@@ -8,7 +8,7 @@ interface VideoSectionPropsInterface {
 
 export default function VideoSection({colorSchema , title , subtitle} : VideoSectionPropsInterface ){
     return (
-        <section id="video" className={`relative w-full md:h-100 lg:h-200 lg:p-14 ${colorSchema.primaryBg}`}>
+        <section id="video" className={`relative w-full md:h-100 lg:h-200 lg:p-14 ${colorSchema.tertiaryBg}`}>
             <video className="block lg:hidden w-full h-full aspect-video object-fill" width="320" height="240" autoPlay loop muted playsInline>
                 <source src="/video/video-sora.mp4" type="video/mp4" />
             </video>

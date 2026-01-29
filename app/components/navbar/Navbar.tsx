@@ -40,7 +40,7 @@ export default function Navbar( {links , colorSchema} : NavbarPropsInterface ){
                     )
                 }) }
             </div>
-            <div className="sm:hidden px-4">
+            <div className="lg:hidden px-4">
                 <Image className="invert brightness-0 saturate-0 h-10 w-10" src="/icons/menu.svg" alt="Hamburger menù icon" width={24} height={24}></Image>
             </div>
         </nav>

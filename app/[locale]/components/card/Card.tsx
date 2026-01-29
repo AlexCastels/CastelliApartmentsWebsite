@@ -29,8 +29,8 @@ interface CardPropsInterface {
 export default function Card({accomodation , colorSchema , dictionary} : CardPropsInterface){
     return (
         <div className="flex flex-col gap-2">
-            <div className={`${colorSchema.secondaryText} h-100 w-80 border border-zinc-300 flex flex-col justify-between pb-4`}>
-                <figure className="group relative overflow-hidden rounded-b-sm h-50 w-full aspect-video mx-auto shadow-md hover:shadow-xl transition-all duration-500">
+            <div className={`${colorSchema.secondaryText} h-100 w-80 lg:w-90 flex flex-col gap-4 justify-between pb-4`}>
+                <figure className="group relative overflow-hidden rounded-sm h-50 lg:h-55 w-full aspect-video mx-auto shadow-md hover:shadow-xl transition-all duration-500">
                     <Image className="absolute inset-0 w-full h-full object-fill transition-transform duration-500 group-hover:scale-[1.05] cursor-pointer "
                         alt="Accomodation image" 
                         src={accomodation.images[0].url} 
@@ -38,7 +38,7 @@ export default function Card({accomodation , colorSchema , dictionary} : CardPro
                         width={accomodation.images[0].width}
                     />
                 </figure>
-                <div id="header" className="px-4 flex justify-between">
+                <div id="header" className="flex justify-between">
                     <div className="flex flex-col flex-1">
                         <p>{dictionary.accomodationsSection.cardDetail.maxGuests} {accomodation.numberOfPeople}</p>
                         <p>{dictionary.accomodationsSection.cardDetail.bed} /</p>
@@ -49,10 +49,10 @@ export default function Card({accomodation , colorSchema , dictionary} : CardPro
                         <Image className='h-7 w-7 scale-105 pt-1 invert brightness-0 saturate-0 opacity-80' alt="icon sofa" src={'/icons/icons8-divano-100.png'} width={100} height={100} ></Image>
                     </div>
                 </div>
-                <div id="body" className={`px-4`}>
+                <div id="body" className={``}>
                     <p className="uppercase text-3xl tracking-wide">{accomodation.name}</p>
                 </div>
-                <div id="footer" className="flex justify-center items-center gap-2">
+                <div id="footer" className="flex justify-between items-center gap-2">
                     <p>CIN:{accomodation.CIN}</p>
                     <div className="h-6 w-px bg-slate-400"></div>
                     <p>CIR:{accomodation.CIR}</p>
