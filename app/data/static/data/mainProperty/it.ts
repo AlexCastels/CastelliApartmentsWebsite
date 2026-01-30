@@ -145,7 +145,7 @@ export const it : PropertyDataInterface = {
                 description: "Palermo cathedral image"
             } , 
             distance: 950,
-            time: 13,
+            time: 12,
             url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Cattedrale+di+Palermo,+Via+Vittorio+Emanuele,+490,+90134+Palermo+PA/@38.1134919,13.3575015,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319ef6198ea25c9:0x8cda5f90f930776a!2m2!1d13.3560504!2d38.1143321!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
         },
         {
@@ -163,7 +163,7 @@ export const it : PropertyDataInterface = {
         {
             name: "La Cala",
             image : {
-                url: "/images/nearby/la-cala.jpg",
+                url: "/images/nearby/cala.webp",
                 width: 1280,
                 height: 853,
                 description: "La Cala port image"
@@ -233,52 +233,52 @@ export const it : PropertyDataInterface = {
             url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Piazza+Pretoria,+90133+Palermo+PA/@38.1135261,13.3605077,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e58b1bce2cd9:0x99023b97c9188633!2m2!1d13.3621028!2d38.1157206!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
         },
         {
-            name: "Piazza Pretoria",
+            name: "Molo trapezoidale",
             image : {
-                url: "/images/nearby/piazza-pretoria.jpg",
+                url: "/images/nearby/molo-trapezoidale.jpg",
                 width: 640,
                 height: 427,
                 description: "Quattro Canti image"
             } , 
-            distance: 600,
-            time: 8,
-            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Piazza+Pretoria,+90133+Palermo+PA/@38.1135261,13.3605077,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e58b1bce2cd9:0x99023b97c9188633!2m2!1d13.3621028!2d38.1157206!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            distance: 1800,
+            time: 23,
+            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Molo+trapezoidale,+Via+Filippo+Patti,+30,+90133+Palermo+PA/@38.1171307,13.3613239,1710m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e5c71ae971a7:0x3a061548f8c76f39!2m2!1d13.3696006!2d38.122925!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
         },
         {
-            name: "Piazza Pretoria",
+            name: "Foro Italico",
             image : {
-                url: "/images/nearby/piazza-pretoria.jpg",
+                url: "/images/nearby/foro-italico.jpg",
                 width: 640,
                 height: 427,
                 description: "Quattro Canti image"
             } , 
-            distance: 600,
-            time: 8,
-            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Piazza+Pretoria,+90133+Palermo+PA/@38.1135261,13.3605077,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e58b1bce2cd9:0x99023b97c9188633!2m2!1d13.3621028!2d38.1157206!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            distance: 1400,
+            time: 19,
+            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Foro+Italico+Umberto+I,+90133+Palermo+PA/@38.1143,13.3666114,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e5eca602ccd7:0xf929d48073284aa0!2m2!1d13.3750284!2d38.1172211!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
         },
         {
-            name: "Piazza Pretoria",
+            name: "Villa Giulia",
             image : {
-                url: "/images/nearby/piazza-pretoria.jpg",
+                url: "/images/nearby/villa-giulia.jpg",
                 width: 640,
                 height: 427,
                 description: "Quattro Canti image"
             } , 
-            distance: 600,
-            time: 8,
-            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Piazza+Pretoria,+90133+Palermo+PA/@38.1135261,13.3605077,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e58b1bce2cd9:0x99023b97c9188633!2m2!1d13.3621028!2d38.1157206!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            distance: 1300,
+            time: 17,
+            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Villa+Giulia,+Via+Lincoln,+90123+Palermo+PA/@38.1125876,13.3666227,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e593797efa09:0xf0b042a609f34e0!2m2!1d13.3752396!2d38.1139902!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
         },
         {
-            name: "Piazza Pretoria",
+            name: "Chiesa di San Cataldo",
             image : {
-                url: "/images/nearby/piazza-pretoria.jpg",
+                url: "/images/nearby/san-cataldo.jpg",
                 width: 640,
                 height: 427,
                 description: "Quattro Canti image"
             } , 
-            distance: 600,
-            time: 8,
-            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Piazza+Pretoria,+90133+Palermo+PA/@38.1135261,13.3605077,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e58b1bce2cd9:0x99023b97c9188633!2m2!1d13.3621028!2d38.1157206!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            distance: 500,
+            time: 7,
+            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Chiesa+di+San+Cataldo,+Piazza+Bellini,+1,+90133+Palermo+PA/@38.1131243,13.3604955,855m/data=!3m3!1e3!4b1!5s0x1319e58b0ebfc9b3:0x7093f18ffc60d3c4!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e58b06d768eb:0x41db74f6802f0e2a!2m2!1d13.362468!2d38.1147645!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
         },
     ],
     accomodations: [
