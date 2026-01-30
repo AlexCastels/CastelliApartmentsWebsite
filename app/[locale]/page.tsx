@@ -11,6 +11,7 @@ import { colorSchema } from "../style/color-schema";
 import VideoSection from "./components/sections/VideoSection";
 import AccomodationSection from "./components/sections/AccomodationSection";
 import FeatureSection from "./components/sections/FeatureSection";
+import Nearbysection from "./components/sections/NearbySection";
 const VALID_LOCALES = ['it' , 'en'] ;
 
 interface HomePropsInterface {
@@ -31,13 +32,16 @@ export default async function Home({ params } : HomePropsInterface) {
 
 	return (
 		<main>
-			<Navbar links={navLinks} colorSchema={colorSchema}/>
-			<HeaderSection propertyData={propertyData} dictionary={dictionary} colorSchema={colorSchema}/>
-			<VideoSection title={dictionary.videoSection.title} subtitle={dictionary.videoSection.subtitle} colorSchema={colorSchema}/>
-			<AccomodationSection propertyData={propertyData} dictionary={dictionary} colorSchema={colorSchema}/>
-			<FeatureSection featureList={propertyData.featureList} dictionary={dictionary} colorSchema={colorSchema}/>
+			<Navbar              links={navLinks}                       colorSchema={colorSchema}/>
+			<HeaderSection       propertyData={propertyData}            colorSchema={colorSchema} dictionary={dictionary}/>
+			<VideoSection                                               colorSchema={colorSchema} dictionary={dictionary}/>
+			<AccomodationSection propertyData={propertyData}            colorSchema={colorSchema} dictionary={dictionary}/>
+			<FeatureSection      featureList={propertyData.featureList} colorSchema={colorSchema} dictionary={dictionary}/>
+			<Nearbysection       nearby={propertyData.nearby}           colorSchema={colorSchema} dictionary={dictionary}/>
 		</main>
 
 		// https://commons.wikimedia.org/w/index.php?search=palermo&title=Special%3AMediaSearch&type=image cercare qui img per le zone
+
+		//nei dettagli e info inserire informazioni su cappella palatina , foro italico, molto trapezoidale e sicilia in generale
 	);
 }

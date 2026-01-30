@@ -29,7 +29,7 @@ export default function Navbar( {links , colorSchema} : NavbarPropsInterface ){
         <nav className={`fixed top-0 left-0 z-50 w-full lg:h-28 flex items-center justify-between lg:px-4 transition-all duration-500
             ${scrolled ? "backdrop-blur-lg shadow-md border-b border-zinc-200/50" : "border-b border-zinc-200/50 bg-transparent"}
         `}>
-            <Image className="object-fill lg:scale-125 h-20 w-24 lg:w-32 lg:h-28 invert brightness-0 saturate-0" height={500} width={500} src="/logo.png" alt="Logo png" />
+            <Image className="object-fill lg:scale-125 h-20 w-24 lg:w-32 lg:h-28 filter icon-white" height={500} width={500} src="/logo.png" alt="Logo png" />
             <div className="hidden lg:flex flex-1 items-center justify-center lg:gap-20 ">
                 { links.map((link : any , index : number) => {
                     return (
@@ -41,7 +41,7 @@ export default function Navbar( {links , colorSchema} : NavbarPropsInterface ){
                 }) }
             </div>
             <div className="lg:hidden px-4">
-                <Image className="invert brightness-0 saturate-0 h-10 w-10" src="/icons/menu.svg" alt="Hamburger menù icon" width={24} height={24}></Image>
+                <Image className="filter icon-white h-10 w-10" src="/icons/menu.svg" alt="Hamburger menù icon" width={24} height={24}></Image>
             </div>
         </nav>
     )

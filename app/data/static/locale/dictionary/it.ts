@@ -30,7 +30,7 @@ export const it : DictionaryInterface = {
         title : 'Caratteristiche'
     },
     nearbySection : {
-        title : 'Tutto quello di cui hai bisogno a due passi'
+        title : 'Tutto ciò di cui hai bisogno a due passi'
     },
     mapSection : {
         title : 'Eccoci qui',

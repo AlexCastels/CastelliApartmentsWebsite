@@ -25,7 +25,7 @@ export default function FeatureSection({featureList , colorSchema , dictionary} 
                     { featureList.map((item) => {
                         return (
                             <div key={item.id} className="flex flex-col items-center gap-4 lg:gap-10">
-                                <Image className="h-10 w-10 lg:h-20 lg:w-20 invert brightness-0 saturate-0 opacity-90"
+                                <Image className="h-10 w-10 lg:h-20 lg:w-20 filter icon-white opacity-90"
                                     src={item.ico}
                                     alt={item.description}
                                     width={100}

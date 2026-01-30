@@ -75,16 +75,18 @@ export interface PropertyDataInterface {
         name: string,
         description : string
     }[],
-    nearBy : [
-        {
-            name: string,
-            latitude: number,
-            longitude: number,
-            distance: number,
-            idPlace: number,
-            url: string
-        },
-    ],
+    nearby : {
+        name: string,
+        image : {
+            url: string,
+            width: number,
+            height: number,
+            description: string
+        } , 
+        distance: number,
+        time : number,
+        url: string
+    }[],
     accomodations: {
         id: number,
         name: string,

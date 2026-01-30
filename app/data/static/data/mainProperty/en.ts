@@ -135,13 +135,101 @@ export const en : PropertyDataInterface = {
             description : `We are pet-friendly. Pets are welcome, and a dedicated kit is provided to ensure your pet’s comfort during the stay.` ,
         },
     ],
-    nearBy : [
+    nearby : [
         {
-            name: "",
-            latitude: 0,
-            longitude: 0,
+            name: "Cattedrale",
+            image : {
+                url: "/images/nearby/palermo-cathedral.jpg",
+                width: 1280,
+                height: 853,
+                description: "Palermo cathedral image"
+            } , 
+            distance: 950,
+            time: 0,
+            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Cattedrale+di+Palermo,+Via+Vittorio+Emanuele,+490,+90134+Palermo+PA/@38.1134919,13.3575015,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319ef6198ea25c9:0x8cda5f90f930776a!2m2!1d13.3560504!2d38.1143321!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+        },
+        {
+            name: "Quattro Canti",
+            image : {
+                url: "/images/nearby/quattro-canti.jpg",
+                width: 1280,
+                height: 853,
+                description: "Quattro Canti image"
+            } , 
+            distance: 600 ,
+            time : 8 ,
+            url: "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Quattro+Canti,+P.za+Villena,+90133+Palermo+PA/@38.1135586,13.3600962,855m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e58ad6a9c999:0x22ef94a7ba5bfaa0!2m2!1d13.3612399!2d38.1157891!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+        },
+        {
+            name: "La Cala",
+            image : {
+                url: "/images/nearby/la-cala.jpg",
+                width: 1280,
+                height: 853,
+                description: "La Cala port image"
+            } , 
             distance: 0,
-            idPlace: 0,
+            time: 0,
+            url: ""
+        },
+        {
+            name: "Mercato Vucciria",
+            image : {
+                url: "/images/nearby/vucciriaHQ.webp",
+                width: 640,
+                height: 427,
+                description: "Vucciria market image"
+            } , 
+            distance: 0,
+            time: 0,
+            url: ""
+        },
+        {
+            name: "Mercato Ballarò",
+            image : {
+                url: "/images/nearby/ballaro.jpg",
+                width: 640,
+                height: 427,
+                description: "Ballarò market image"
+            } , 
+            distance: 0,
+            time: 0,
+            url: ""
+        },
+        {
+            name: "Teatro Massimo",
+            image : {
+                url: "/images/nearby/teatro-massimo.jpg",
+                width: 640,
+                height: 427,
+                description: "Teatro Massimo image"
+            } , 
+            distance: 0,
+            time: 0,
+            url : "https://www.google.com/maps/dir/Vicolo+la+Rocca+alle+Case+Nuove,+10,+90134+Palermo+PA/Teatro+Massimo+di+Palermo,+P.za+Giuseppe+Verdi,+90138+Palermo+PA/@38.1159837,13.3552779,1710m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x1319e5895da036bf:0xd87fa3e67664012f!2m2!1d13.3631556!2d38.1114328!1m5!1m1!1s0x1319e5f58244ce49:0x8eecc03c703a402d!2m2!1d13.3574867!2d38.1202618!3e2?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+        },
+        {
+            name: "Palazzo dei Normanni",
+            image : {
+                url: "/images/nearby/palazzo-dei-normanni.jpg",
+                width: 640,
+                height: 427,
+                description: "Quattro Canti image"
+            } , 
+            distance: 0,
+            time: 0,
+            url: ""
+        },
+        {
+            name: "Piazza Pretoria",
+            image : {
+                url: "/images/nearby/piazza-pretoria.jpg",
+                width: 640,
+                height: 427,
+                description: "Quattro Canti image"
+            } , 
+            distance: 0,
+            time: 0,
             url: ""
         },
     ],

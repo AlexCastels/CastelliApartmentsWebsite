@@ -45,8 +45,8 @@ export default function Card({accomodation , colorSchema , dictionary} : CardPro
                         <p>{dictionary.accomodationsSection.cardDetail.sofa}</p>
                     </div>
                     <div className="flex items-baseline justify-center gap-1">
-                        <Image className="h-7 w-7 scale-95 invert brightness-0 saturate-0 opacity-70" alt="icon bed" src={'/icons/icons8-bed-100.png'} width={90} height={90} ></Image>
-                        <Image className='h-7 w-7 scale-105 pt-1 invert brightness-0 saturate-0 opacity-80' alt="icon sofa" src={'/icons/icons8-divano-100.png'} width={100} height={100} ></Image>
+                        <Image className="h-7 w-7 scale-95 filter icon-white opacity-70" alt="icon bed" src={'/icons/icons8-bed-100.png'} width={90} height={90} ></Image>
+                        <Image className='h-7 w-7 scale-105 pt-1 filter icon-white opacity-80' alt="icon sofa" src={'/icons/icons8-divano-100.png'} width={100} height={100} ></Image>
                     </div>
                 </div>
                 <div id="body" className={``}>
@@ -59,7 +59,7 @@ export default function Card({accomodation , colorSchema , dictionary} : CardPro
                 </div>
             </div>
             <div className="self-end">
-                <button className={`${colorSchema.secondaryText} text-lg flex gap-1 cursor-pointer hover:ring-1 hover:ring-zinc-300 transition-all duration-300  p-1`}>
+                <button className={`${colorSchema.secondaryText} text-lg flex gap-1 cursor-pointer hover:ring-2 hover:ring-zinc-300 transition duration-300  p-1`}>
                     <p>{accomodation.cta.label}</p>
                     <Image className="invert brightness-0 saturate-0 opacity-90 pb-px"
                         src="/icons/arrow-right.png" 
