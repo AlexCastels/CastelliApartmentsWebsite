@@ -2,7 +2,6 @@ import { ColorSchemaInterface } from "@/app/models/colorSchema/colorSchema.inter
 import { DictionaryInterface } from "@/app/models/dictionary/dictionary.interface";
 import Image from "next/image";
 import Link from "next/link";
-import NearbyScrollableContainer from "../scrollableContainer/NearbyScrollableContainer";
 
 interface NearbySectionProps {
     nearby : {
